@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #002046;
+  --color-primary-container: #1b365d;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #87a0cd;
+
+  --color-secondary: #45664b;
+  --color-secondary-container: #c4e9c7;
+  --color-on-secondary-container: #4a6a4f;
+  
+  --color-background: #fcf9f2;
+  --color-surface: #fcf9f2;
+  --color-on-surface: #1c1c18;
+  --color-on-surface-variant: #44474e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3ec;
+  --color-surface-container: #f1eee7;
+  --color-surface-container-high: #ebe8e1;
+  --color-surface-container-highest: #e5e2db;
+  
+  --color-outline: #74777f;
+  --color-outline-variant: #c4c6cf;
+  
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+  
+  --font-caption-citation: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-display-hero: "Newsreader", serif;
+  --font-headline-sm: "Newsreader", serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-headline-lg: "Newsreader", serif;
+  
+  --text-caption-citation: 0.75rem;
+  --text-caption-citation--line-height: 1.125rem;
+  --text-caption-citation--font-weight: 400;
+
+  --text-label-sm: 0.6875rem;
+  --text-label-sm--line-height: 0.875rem;
+  --text-label-sm--letter-spacing: 0.05em;
+  --text-label-sm--font-weight: 600;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.375rem;
+  --text-body-sm--font-weight: 400;
+
+  --text-display-hero: 3.5rem;
+  --text-display-hero--line-height: 4.25rem;
+  --text-display-hero--letter-spacing: -0.02em;
+  --text-display-hero--font-weight: 400;
+
+  --text-headline-sm: 1.25rem;
+  --text-headline-sm--line-height: 1.75rem;
+  --text-headline-sm--font-weight: 500;
+
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.625rem;
+  --text-body-md--font-weight: 400;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.875rem;
+  --text-body-lg--font-weight: 400;
+
+  --text-label-md: 0.8125rem;
+  --text-label-md--line-height: 1.125rem;
+  --text-label-md--letter-spacing: 0.03em;
+  --text-label-md--font-weight: 600;
+
+  --text-headline-lg: 2rem;
+  --text-headline-lg--line-height: 3rem;
+  --text-headline-lg--letter-spacing: -0.015em;
+  --text-headline-lg--font-weight: 400;
+}

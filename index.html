@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <title>Ensiklopedia Teknologi Informasi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+    <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col justify-between py-4">
+            <div class="flex items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="flex"><a
+                            class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium hover:text-primary-container transition-colors"
+                            href="#beranda">WikIT</a></div>
+                </div>
+                <div class="flex-1 max-w-md flex items-center relative">
+                    <div class="w-full flex items-center bg-surface-container-low rounded-lg px-2 py-1"><span
+                            class="material-symbols-outlined text-outline mr-1 text-body-md">search</span><input
+                            class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none"
+                            placeholder="Cari artikel, topik, istilah..." type="text"></div>
+                </div>
+                <div class="flex items-center gap-4"><button
+                        class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center"
+                        title="Mode Baca" type="button"><span
+                            class="material-symbols-outlined text-body-lg">menu_book</span></button><button
+                        class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center"
+                        title="Ganti Tema Warna" type="button"><span
+                            class="material-symbols-outlined text-body-lg">dark_mode</span></button>
+                    <div class="relative flex items-center pl-1">
+                        <div aria-label="Profil"
+                            class="w-8 h-8 rounded-full bg-secondary text-on-primary font-label-md text-label-md flex items-center justify-center"
+                            role="img">TI</div><span
+                            class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-15 bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <section class="w-full bg-surface-container-low px-6 py-10" id="beranda">
+                <div class="max-w-7xl mx-auto flex flex-col gap-6">
+                    <div class="flex flex-row items-end justify-between gap-4">
+                        <div class="space-y-1">
+                            <h1 class="font-display-hero text-display-hero text-primary font-normal leading-tight">
+                                Artikel dan Berita Teknologi Informasi</h1>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">Informasi terkini tentang software, AI, dll </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-surface-container rounded-xl p-4 shadow-sm flex flex-row gap-4 items-center justify-between">
+                        <div class="w-full relative flex items-center"><span
+                                class="material-symbols-outlined absolute left-3 text-outline text-body-md pointer-events-none">search</span>
+                            <input
+                                class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-inner"
+                                placeholder="Cari disiplin, subbidang, atau artikel..." type="text"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-7xl mx-auto px-6 py-10 w-full" id="direktori" style="scroll-margin-top: 7rem">
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-12 flex flex-col gap-16">
+                        <article class="flex flex-col gap-4" id="fak-01" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Pemrograman
+                                        &amp; Ilmu Komputer</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">code</span> <span>4
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="PhotoCraft, klon Photoshop open-source" class="w-full h-full object-cover"
+                                        loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/not-photoshop-406x232.webp">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-12</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone"
+                                            rel="noopener" target="_blank">PhotoCraft: Klon Photoshop Open-Source yang
+                                            Dibangun AI</a></h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">PhotoCraft
+                                        adalah editor gambar open-source lintas platform yang ditulis dengan Rust dan
+                                        disebut sebagai reimplementasi Photoshop yang bersih (clean-room). Aplikasi ini
+                                        menjadi contoh bagaimana perkakas coding AI dipakai untuk membangun perangkat
+                                        lunak kreatif yang kompleks.</p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 8 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone"
+                                    rel="noopener" target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone"
+                                                rel="noopener" target="_blank">PhotoCraft: Klon Photoshop Open-Source
+                                                yang Dibangun AI</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">8
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/hylki-email-client-for-gnome"
+                                                rel="noopener" target="_blank">Hylki: Klien Email Modern Berbasis Rust
+                                                untuk GNOME</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">5
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-mengenal-bahasa-pemrograman-rust">Mengenal Bahasa
+                                                Pemrograman Rust</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-python-bahasa-serbaguna-untuk-pemula">Python: Bahasa
+                                                Serbaguna untuk Pemula</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                                <div class="pt-2 mt-2 bg-surface-container rounded-lg p-2 space-y-2">
+                                    <div class="font-label-sm text-label-sm uppercase text-on-surface-variant">Setoran
+                                        Terbaru</div>
+                                    <ul
+                                        class="text-caption-citation font-caption-citation space-y-1 text-on-surface-variant">
+                                        <li class="flex items-center justify-between gap-2"><span>• KDE Plasma 6.8 Rilis
+                                                Memperingati 30 Tahun Proyek (14 Okt 2026)</span> <span
+                                                class="text-secondary font-medium shrink-0">OMG! Ubuntu!</span></li>
+                                        <li class="flex items-center justify-between gap-2"><span>• Linux Mint 27
+                                                ‘Adrien’ Hadir Natal Ini (13 Okt 2026)</span> <span
+                                                class="text-secondary font-medium shrink-0">OMG! Ubuntu!</span></li>
+                                        <li class="flex items-center justify-between gap-2"><span>• ONLYOFFICE 10.0
+                                                Dibangun Ulang dengan Fitur AI Lebih Luas (13 Okt 2026)</span> <span
+                                                class="text-secondary font-medium shrink-0">OMG! Ubuntu!</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-mengenal-bahasa-pemrograman-rust" style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">Mengenal Bahasa
+                                    Pemrograman Rust</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>Rust adalah bahasa pemrograman sistem yang menjanjikan dua hal sekaligus:
+                                        kecepatan setara C/C++ dan keamanan memori yang dijamin oleh kompiler. Kuncinya
+                                        adalah <em>ownership</em>: setiap nilai punya satu pemilik, dan kompiler menolak
+                                        program yang berpotensi menimbulkan <em>double free</em> atau <em>data
+                                            race</em>.</p>
+                                    <p>Berbeda dari bahasa dengan <em>garbage collector</em> seperti Java atau Go, Rust
+                                        tidak menghentikan program untuk bersih-bersih memori, sehingga cocok untuk
+                                        sistem operasi, game engine, perkakas CLI, dan aplikasi desktop seperti klien
+                                        email Hylki. Kurva belajarnya memang curam di awal, tetapi pesan error
+                                        kompilernya termasuk yang paling membantu di antara semua bahasa populer.</p>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-python-bahasa-serbaguna-untuk-pemula" style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">Python: Bahasa
+                                    Serbaguna untuk Pemula</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>Python adalah bahasa berpengetikan dinamis yang sintaksnya mirip bahasa
+                                        sehari-hari. Program Python tidak perlu dikompilasi manual: interpreter
+                                        menjalankannya langsung sehingga siklus coba-salah menjadi sangat cepat.</p>
+                                    <p>Ekosistemnya sangat besar: pip dan virtual environment untuk manajemen paket,
+                                        Django dan FastAPI untuk backend web, serta pandas dan scikit-learn untuk data.
+                                        Kelemahannya adalah kecepatan eksekusi untuk perulangan mentah yang intensif,
+                                        yang biasanya diatasi dengan mendelegasikan komputasi berat ke pustaka berbasis
+                                        C seperti NumPy.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="flex flex-col gap-4" id="fak-02" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Pengembangan
+                                        Web &amp; Perangkat Lunak</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">web_asset</span> <span>4
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="ONLYOFFICE 10.0 dengan fitur AI" class="w-full h-full object-cover"
+                                        loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2025/10/onlyoffice-logo-hero-406x232.jpg">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-02</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/onlyoffice-10-expands-ai-tools"
+                                            rel="noopener" target="_blank">ONLYOFFICE 10.0 Dibangun Ulang dengan Fitur
+                                            AI Lebih Luas</a></h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Paket
+                                        perkantoran open-source ONLYOFFICE merilis versi 10.0 yang disebut sebagai
+                                        aplikasi yang dibangun ulang sepenuhnya, dengan lebih dari seribu perbaikan bug
+                                        dan fitur AI yang diperluas lewat add-on AI Tools terpisah.</p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 13 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/onlyoffice-10-expands-ai-tools"
+                                    rel="noopener" target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/onlyoffice-10-expands-ai-tools"
+                                                rel="noopener" target="_blank">ONLYOFFICE 10.0 Dibangun Ulang dengan
+                                                Fitur AI Lebih Luas</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">13
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/firefox-158-released-with-jpeg-xl-support"
+                                                rel="noopener" target="_blank">Firefox 158 Rilis dengan Dukungan JPEG
+                                                XL</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">12
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/calibre-read-aloud-kokoro-voices"
+                                                rel="noopener" target="_blank">Calibre Kini Bisa Membacakan Ebook dengan
+                                                Suara Alami</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">9
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/firefox-gnome-theme-nova-update"
+                                                rel="noopener" target="_blank">Tema Firefox GNOME Diperbarui untuk
+                                                Nova</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">6
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="flex flex-col gap-4" id="fak-03" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Kecerdasan
+                                        Buatan &amp; Sains Data</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">smart_toy</span> <span>3
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="Myna, alat dikte suara AI untuk Ubuntu" class="w-full h-full object-cover"
+                                        loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/myna-1-406x232.webp">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-06</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/ubuntu-release-myna-tech-preview"
+                                            rel="noopener" target="_blank">Ubuntu Rilis Pratinjau Myna, Alat Dikte Suara
+                                            AI</a></h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Canonical
+                                        merilis pratinjau teknologi Myna, perkakas speech-to-text bertenaga AI untuk
+                                        desktop Ubuntu yang mengubah ucapan menjadi teks langsung di aplikasi apa pun.
+                                    </p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 12 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/ubuntu-release-myna-tech-preview"
+                                    rel="noopener" target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-release-myna-tech-preview"
+                                                rel="noopener" target="_blank">Ubuntu Rilis Pratinjau Myna, Alat Dikte
+                                                Suara AI</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">12
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-large-language-model-cara-kerja-batasan">Large Language
+                                                Model: Cara Kerja dan Batasannya</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-machine-learning-komputer-belajar-dari-data">Machine
+                                                Learning: Komputer yang Belajar dari Data</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-large-language-model-cara-kerja-batasan" style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">Large Language
+                                    Model: Cara Kerja dan Batasannya</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>Large language model (LLM) adalah jaringan saraf berbasis arsitektur Transformer
+                                        yang dilatih memprediksi token berikutnya pada miliaran contoh teks. Tahap
+                                        <em>pretraining</em> mengajarkan statistik bahasa, lalu <em>fine-tuning</em>
+                                        mengarahkan perilakunya, misalnya mengikuti instruksi.</p>
+                                    <p>Batasannya perlu dipahami: model bisa <em>berhalusinasi</em> (percaya diri tetapi
+                                        salah), pengetahuannya kedaluwarsa, dan data rahasia sebaiknya tidak dimasukkan
+                                        ke layanan yang kebijakan datanya tidak jelas. Perlakukan LLM sebagai asisten
+                                        yang mempercepat kerja, bukan sebagai otoritas kebenaran.</p>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-machine-learning-komputer-belajar-dari-data"
+                                style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">Machine Learning:
+                                    Komputer yang Belajar dari Data</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>Ada tiga paradigma utama: <em>supervised learning</em> belajar dari contoh
+                                        berlabel (misalnya email spam atau bukan), <em>unsupervised learning</em>
+                                        menemukan struktur tanpa label (misalnya kelompok pelanggan), dan
+                                        <em>reinforcement learning</em> belajar lewat coba-gagal berbekal reward.</p>
+                                    <p>Dua jebakan klasiknya adalah <em>overfitting</em> (menghafal data latih sehingga
+                                        gagal di data baru) dan kebocoran data uji ke proses training. Karena itu data
+                                        selalu dibagi menjadi set latih, validasi, dan uji, dan skor hanya sah bila
+                                        diukur pada data yang belum pernah dilihat model.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="flex flex-col gap-4" id="fak-04" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Jaringan
+                                        Komputer &amp; Keamanan Siber</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">shield</span> <span>3
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="Serangan DDoS terhadap situs Ubuntu" class="w-full h-full object-cover"
+                                        loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/Ubuntu-Security-Bug-406x232.webp">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-13</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/ubuntu-website-ddos-part-2"
+                                            rel="noopener" target="_blank">Situs Ubuntu Down akibat Serangan DDoS
+                                            [Teratasi]</a></h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Canonical
+                                        melaporkan serangan distributed denial of service (DDoS) berkelanjutan terhadap
+                                        situs-situs Ubuntu hingga sempat down, sebelum tim mereka berhasil memulihkan
+                                        layanan.</p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 8 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/ubuntu-website-ddos-part-2" rel="noopener"
+                                    target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-website-ddos-part-2"
+                                                rel="noopener" target="_blank">Situs Ubuntu Down akibat Serangan DDoS
+                                                [Teratasi]</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">8
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-2610-secure-boot-grub-change"
+                                                rel="noopener" target="_blank">Ubuntu 26.10 Ubah Boot Secure Boot demi
+                                                Keamanan</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">7
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-model-osi-dan-tcp-ip-satu-halaman">Model OSI dan TCP/IP
+                                                dalam Satu Halaman</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-model-osi-dan-tcp-ip-satu-halaman" style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">Model OSI dan
+                                    TCP/IP dalam Satu Halaman</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>Model OSI membagi komunikasi menjadi tujuh lapisan: Fisik, Data Link, Jaringan,
+                                        Transport, Sesi, Presentasi, dan Aplikasi. Model TCP/IP yang dipakai internet
+                                        menggabungkannya menjadi empat: akses jaringan, internet (IP), transport
+                                        (TCP/UDP), dan aplikasi.</p>
+                                    <p>TCP menjamin data sampai berurutan dan utuh sehingga cocok untuk web dan berkas,
+                                        sedangkan UDP mengorbankan jaminan demi latensi rendah untuk video call dan
+                                        game. Saat koneksi bermasalah, diagnosis berlapis dari bawah ke atas: periksa
+                                        kabel dan Wi-Fi, alamat IP, ping ke gateway, port tujuan, barulah aplikasinya.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="flex flex-col gap-4" id="fak-05" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Sistem
+                                        Operasi, Cloud &amp; Infrastruktur</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">cloud</span> <span>6
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="KDE Plasma 6.8" class="w-full h-full object-cover" loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2022/10/kde-logo-406x232.jpg">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-01</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/kde-plasma-6-8-released"
+                                            rel="noopener" target="_blank">KDE Plasma 6.8 Rilis Memperingati 30 Tahun
+                                            Proyek</a></h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">KDE Plasma
+                                        6.8 rilis bertepatan dengan 30 tahun lingkungan desktop open-source ini: ada
+                                        perkakas backup otomatis Kup, Spectacle kini merekam audio sistem dan mikrofon,
+                                        tampilan Steam lebih konsisten, plus opsi aksesibilitas click dwell.</p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 14 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/kde-plasma-6-8-released" rel="noopener"
+                                    target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/kde-plasma-6-8-released"
+                                                rel="noopener" target="_blank">KDE Plasma 6.8 Rilis Memperingati 30
+                                                Tahun Proyek</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">14
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/linux-mint-27-adrien-due-at-christmas"
+                                                rel="noopener" target="_blank">Linux Mint 27 ‘Adrien’ Hadir Natal
+                                                Ini</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">13
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-2704-is-tenacious-t-rex"
+                                                rel="noopener" target="_blank">Nama Kode Ubuntu 27.04: ‘Tenacious
+                                                T-Rex’</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">12
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-app-center-add-ons-media"
+                                                rel="noopener" target="_blank">App Center Ubuntu Memudahkan Instal Codec
+                                                Media</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">11
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/modern-gnome-weather-extensions"
+                                                rel="noopener" target="_blank">Dua Ekstensi Cuaca Menawan untuk GNOME
+                                                Shell</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">7
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/scrcpy-hardware-decoding-added"
+                                                rel="noopener" target="_blank">Scrcpy 5.0 Tambah Decoding Hardware untuk
+                                                Mirroring Android</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">6
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="flex flex-col gap-4" id="fak-06" style="scroll-margin-top: 7rem">
+                            <div
+                                class="bg-surface-container-high p-4 rounded-xl flex flex-row items-baseline justify-between gap-2 shadow-sm">
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-headline-lg text-headline-lg text-primary font-normal">Perangkat
+                                        Keras &amp; Arsitektur Komputer</h2>
+                                </div>
+                                <div
+                                    class="flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold">
+                                    <span class="material-symbols-outlined text-body-md">memory</span> <span>4
+                                        artikel</span></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-row gap-4 items-center">
+                                <div class="w-36 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img
+                                        alt="NexPhone, HP multi sistem operasi" class="w-full h-full object-cover"
+                                        loading="lazy"
+                                        src="https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/nexphone-collage-406x232.jpg">
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-1"><span
+                                            class="font-label-sm text-label-sm uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Monograf
+                                            Unggulan</span> <span
+                                            class="font-caption-citation text-caption-citation text-on-surface-variant">Ref:
+                                            UB-04</span></div>
+                                    <h3
+                                        class="font-headline-sm text-headline-sm text-primary font-medium hover:underline cursor-pointer">
+                                        <a class="text-primary hover:underline font-medium"
+                                            href="https://www.omgubuntu.co.uk/2026/10/nexphone-delay-march-2027"
+                                            rel="noopener" target="_blank">NexPhone Multi-OS Ditunda hingga 2027</a>
+                                    </h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">NexPhone,
+                                        HP yang dapat menjalankan banyak sistem operasi dan sudah pre-order sejak awal
+                                        2026, mundur pengirimannya ke Maret 2027 karena masalah penempatan antena dan
+                                        casing.</p>
+                                    <p class="font-caption-citation text-caption-citation text-on-surface-variant">OMG!
+                                        Ubuntu! • 12 Okt 2026 • ±1 mnt baca</p>
+                                </div><a
+                                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-colors shrink-0"
+                                    href="https://www.omgubuntu.co.uk/2026/10/nexphone-delay-march-2027" rel="noopener"
+                                    target="_blank">Baca Sumber</a>
+                            </div>
+                            <div class="bg-surface-container-low rounded-xl p-4 space-y-2 shadow-sm">
+                                <div
+                                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant pb-2">
+                                    Daftar Artikel Fakultas</div>
+                                <div class="grid grid-cols-2 gap-1 font-body-sm text-body-sm">
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/nexphone-delay-march-2027"
+                                                rel="noopener" target="_blank">NexPhone Multi-OS Ditunda hingga 2027</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">12
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/ubuntu-desktop-riscv-iso"
+                                                rel="noopener" target="_blank">Ubuntu Kini Punya Citra Desktop Resmi
+                                                untuk RISC-V</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">10
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="https://www.omgubuntu.co.uk/2026/10/document-foundation-new-logo"
+                                                rel="noopener" target="_blank">The Document Foundation Punya Logo
+                                                Sendiri</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                OMG! Ubuntu! • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">9
+                                            Okt 2026</span>
+                                    </div>
+                                    <div
+                                        class="p-1 hover:bg-surface-container rounded flex items-center justify-between gap-2 transition-colors">
+                                        <div class="min-w-0"><a class="text-primary hover:underline font-medium"
+                                                href="#artikel-cpu-dan-memori-otak-dan-ruang-kerja">CPU dan Memori: Otak
+                                                dan Ruang Kerja Komputer</a>
+                                            <p
+                                                class="font-caption-citation text-caption-citation text-on-surface-variant">
+                                                Ensiklopedia TI • ±1 mnt baca</p>
+                                        </div><span
+                                            class="font-caption-citation text-caption-citation bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant shrink-0">15
+                                            Okt 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm"
+                                id="artikel-cpu-dan-memori-otak-dan-ruang-kerja" style="scroll-margin-top: 7rem">
+                                <h3 class="font-headline-sm text-headline-sm text-primary font-medium">CPU dan Memori:
+                                    Otak dan Ruang Kerja Komputer</h3>
+                                <p class="font-caption-citation text-caption-citation text-on-surface-variant py-1">
+                                    Ensiklopedia TI • 15 Okt 2026 • ±1 mnt baca</p>
+                                <div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                    <p>CPU bekerja dalam siklus berulang: mengambil (<em>fetch</em>) instruksi dari
+                                        memori, menerjemahkan (<em>decode</em>), mengeksekusi (<em>execute</em>), lalu
+                                        menyimpan hasilnya. CPU multi-core mengerjakan beberapa thread secara
+                                        benar-benar paralel, dan cache L1/L2/L3 menyimpan data yang sering dipakai agar
+                                        tidak perlu jauh-jauh ke RAM.</p>
+                                    <p>RAM adalah ruang kerja aktif: isinya hilang saat daya mati. SSD dan HDD adalah
+                                        penyimpanan permanen: SSD jauh lebih cepat, HDD lebih murah per gigabyte untuk
+                                        backup dan arsip. Ketika RAM habis, sistem memakai swap di disk dan terasa
+                                        melambat drastis — di sinilah kapasitas memori yang cukup menjadi penting.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="w-full bg-surface-container-low text-on-surface py-16 shadow-[0_1px_8px_rgba(0,0,0,0.02)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-3 gap-6">
+                <div id="taksonomi">
+                    <h4 class="font-headline-sm text-headline-sm text-primary mb-4">Taksonomi Pengetahuan</h4>
+                    <ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+                        <li><a class="hover:text-primary transition-colors" href="#fak-01">Pemrograman &amp;
+                                Algoritma</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#fak-02">Web &amp; Perangkat Lunak</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#fak-03">Data &amp; Kecerdasan
+                                Buatan</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#fak-04">Jaringan &amp; Keamanan</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#fak-05">Sistem &amp; Cloud</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#fak-06">Perangkat Keras &amp;
+                                Arsitektur</a></li>
+                    </ul>
+                </div>
+                <div id="standar">
+                    <h4 class="font-headline-sm text-headline-sm text-primary mb-4">Standar Editorial</h4>
+                    <ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+                        <li><a class="hover:text-primary transition-colors" href="#standar">Protokol Telaah Sejawat</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#standar">Verifikasi Referensi</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#standar">Kebijakan Keabadian
+                                Arsip</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#standar">Netralitas &amp; Konflik
+                                Kepentingan</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#standar">Register Koreksi &amp;
+                                Errata</a></li>
+                    </ul>
+                </div>
+                <div id="kontribusi">
+                    <h4 class="font-headline-sm text-headline-sm text-primary">Kontribusi &amp; Data</h4>
+                    <ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+                        <li><a class="hover:text-primary transition-colors" href="#kontribusi">Kiriman Artikel</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#kontribusi">API Dataset Terbuka</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#kontribusi">Skema Metadata &amp;
+                                Ontologi</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#kontribusi">Lisensi &amp; Domain
+                                Publik</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#kontribusi">Kemitraan Institusi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
